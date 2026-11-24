@@ -23,3 +23,9 @@ This portfolio demo uses fictional data. The hosted Python service runs on Rende
 ## Agent Tool-Call Evaluator
 
 [Launch the evaluation lab](https://sainikhilhampanoor-0210.github.io/agentic-search-demo/tool-trace-lab/) · [Read the evaluator](tool-trace-lab/engine.mjs). Run the regression suite with `node tool-trace-lab/test.mjs`.
+
+## Agent Retry Policy Simulator
+
+Replay a tool’s scripted responses. Compare a single attempt with bounded exponential backoff and see exactly when the workflow completes, reaches its deadline, or stops for review. No external tools are called.
+
+[Open project](https://sainikhilhampanoor-0210.github.io/agentic-search-demo/retry-lab/) · [Source](retry-lab/engine.mjs). Test locally with `node retry-lab/test.mjs`.
