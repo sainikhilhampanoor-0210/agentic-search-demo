@@ -1,0 +1,2 @@
+import {scenarios,replay} from "./engine.mjs";import {select,example,run,section,line,table} from "./ui.mjs";
+const preset=()=>{example.value=JSON.stringify(scenarios[select.value],null,2)};preset();select.addEventListener("change",preset);run(()=>{const r=replay(JSON.parse(example.value));section(r.pass?"Trace passed":"Trace stopped at step "+r.rows.length);line("Simulated returns: "+(r.issued.join(", ")||"none"));table(["Step","Tool","Order","Verdict"],r.rows);});

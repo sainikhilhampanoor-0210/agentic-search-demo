@@ -19,3 +19,7 @@ Search for `headphones under 100`, then try `order A1042`. The first request fil
 Follow the [FastAPI and Docker instructions](BACKEND.md). For the standalone browser version, run `python3 -m http.server 8000` from the repository root and open `http://localhost:8000`.
 
 This portfolio demo uses fictional data. The hosted Python service runs on Render’s free tier and may take a moment to wake up.
+
+## Agent Tool-Call Evaluator
+
+[Launch the evaluation lab](https://sainikhilhampanoor-0210.github.io/agentic-search-demo/tool-trace-lab/) · [Read the evaluator](tool-trace-lab/engine.mjs). Run the regression suite with `node tool-trace-lab/test.mjs`.
